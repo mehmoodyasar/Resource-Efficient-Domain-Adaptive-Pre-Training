@@ -13,7 +13,7 @@ Run the jupyter notebook files in the order suggested here. Also, run the cells 
 
 ### 1. Dataset preparation
 All the datasets are converted to .npy files (where each array element has the data type of float16). To do so, all the images/slices are read and stored inside NumPy arrays (images/slices of each class are stored in a different array). These arrays are saved as .npy files.
-The code files -----, -------, -------, and ------ in the "Dataset preparation" folder contain code to save the datasets BraTS 2020 (T1 sequence), contrast-enhanced MRI (CE-MRI), Harvard Medical School (HMS), and Kaggle brain tumor type classification (Kaggle BTTC), respectively as .npy files.
+The code files BraTS_To_NPY.ipynb, CE_MRI_To_NPY.ipynb, HMS_To_NPY.ipynb, and Kaggle_BTTC_To_NPY.ipynb in the "Dataset preparation" folder contain code to save the datasets BraTS 2020 (T1 sequence), contrast-enhanced MRI (CE-MRI), Harvard Medical School (HMS), and Kaggle brain tumor type classification (Kaggle BTTC), respectively as .npy files.
 
 ### 2. Domain adaptive pre-training (DAPT)
 The following table summarizes the training protocol for all the strategies for the DAPT (please see the paper for further details):
@@ -39,19 +39,19 @@ The following table summarizes the training protocol for all the strategies for 
 | ImageNet_TF_F1B 	| First One Block of ResNet50  	| 229,760          	| -      	| -                    	| -      	| -                        	|
 | ImageNet_TF_F2B 	| First Two Blocks of ResNet50 	| 1,460,096        	| -      	| -                    	| -      	| -                        	|
 
-The notebooks -----, -----, and ----- inside the folder "Domain adaptive pre-training (DAPT)" contains the code for DAPT phase 1, 2, and 3, respectively.
+The notebooks DAPT_Phase_1.ipynb, DAPT_Phase_2.ipynb, and DAPT_Phase_3.ipynb inside the folder "Domain adaptive pre-training (DAPT)" contains the code for DAPT phase 1, 2, and 3, respectively.
 
 ### 3. Features extraction
-The notebook ------- inside the folder "Features extraction" contains the code for extracting features from all the domain-adaptively pre-trained models.
+The notebook Features_Extraction.ipynb inside the folder "Features extraction" contains the code for extracting features from all the domain-adaptively pre-trained models.
 
 ### 4. Downstream classification
-The notebook ------- in the folder "Downstream classification" contains the brain disease classification and brain tumor type classification code.
+The notebook Classification.ipynb in the folder "Downstream classification" contains the brain disease classification and brain tumor type classification code.
 
 ### 5. Robustness check
-The notebook ------- in the folder "Robustness check" contains the code to evaluate the robustness of models trained for the CE-MRI dataset for all the DAPT strategies.
+The notebook Robustness.ipynb in the folder "Robustness check" contains the code to evaluate the robustness of models trained for the CE-MRI dataset for all the DAPT strategies.
 
 ### 6. Visualizations
-Inside the  "Visualizations" folder, the notebook ------ contains the code to visualize the results. The checkpoints saved during the downstream classification and robustness check are utilized in this step.
+Inside the  "Visualizations" folder, the notebook Visualizations.ipynb contains the code to visualize the results. The checkpoints saved during the downstream classification and robustness check are utilized in this step.
 
 ## Note
 Please feel free to contact me at yasar.mehmood111@gmail.com in case you encounter any problem while running the experiments.
