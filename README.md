@@ -57,4 +57,4 @@ Inside the  "Visualizations" folder, the notebook Visualizations.ipynb contains 
 Please feel free to contact me at yasar.mehmood111@gmail.com in case you encounter any problem while running the experiments.
 
 ## License
-Released under the [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/2.0/) license.
+Released under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) license.
