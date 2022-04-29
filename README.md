@@ -1,5 +1,5 @@
 # Resource efficient domain adaptive pre-training
-This repository contains the complete code for reproducing the results of the study "Resource-efficient domain adaptive pre-training for medical images." Please download the arXiv pre-print of the study here.<br>
+This repository contains the complete code for reproducing the results of the study "Resource-efficient domain adaptive pre-training for medical images." Please download the arXiv pre-print of the study [here](https://arxiv.org/abs/2204.13280).<br>
 ## General guidelines
 Run the jupyter notebook files in the order suggested here. Also, run the cells from top to bottom within each notebook file. The tasks you need to perform to reproduce the results in the study are:
 <ol>
